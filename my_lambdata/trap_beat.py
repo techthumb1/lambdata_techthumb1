@@ -1,4 +1,4 @@
-# beat.py
+# trap_beat.py
 
 
 class TrapBeat():

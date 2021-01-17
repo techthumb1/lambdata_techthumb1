@@ -21,8 +21,8 @@ if __name__ == "__main__":
         'e':[41, 15, 36, 7, 20]}
     )
 
-    train = df[df['a'], + df['b'], + df['c']]
-    test = df['e', 'd']
+    train = df['a'], df['b'], df['c'], df['d']
+    test = df['d']
 
-    print(train)
-    print(test)
+    print("80 percent",train)
+    print("20 percent",test)
