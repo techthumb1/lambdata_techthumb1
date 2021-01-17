@@ -1,8 +1,8 @@
 # my_lambdata/my_script.py
 
 import pandas
-
-from my_mod import enlarge
+from trap_beat import TrapBeat
+from trap_beat import Hip_Hop
 
 print("HELLO WORLD")
 
