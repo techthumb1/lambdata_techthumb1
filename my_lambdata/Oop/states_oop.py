@@ -2,15 +2,17 @@
 # OOP APPROACH
 
 import pandas
-
-class DataFrameTransformer(object):
+ # how can
+class DataFrameTransformer():
     def __init__(self, df):
-        """Param df pandas dataframe with column name "abbrevs" """
+        """
+        Parameters (df) a DataFrame with a column called "abbrev" that has state affreviations.
+        """        
         self.df = df
 
     def inspect_data(self):
         print(self.df.head())
-
+        
     def add_state_names(self):
         """
         State abbreviation -> Full Name and visa versa.
