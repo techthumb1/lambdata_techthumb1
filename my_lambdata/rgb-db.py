@@ -1,7 +1,7 @@
 import os
 import sqlite3
 
-DB_FILEPATH =  os.path.join(os.path.dirname(__file__), "rpg_db.sqlite3")
+DB_FILEPATH =  os.path.join(os.path.dirname(__file__), "/Users/jasonrobinson/Downloads/rpg_db.sqlite3")
 
 connection = sqlite3.connect(DB_FILEPATH)
 print("CONNECTION:", connection) 
@@ -10,7 +10,7 @@ cursor = connection.cursor()
 print("CURSOR", cursor)
 
 # How many total Characters are there?
-query = """ SELECT 
+query1 = """ SELECT 
 Count(name)
 FROM charactercreator_character
 """
@@ -73,15 +73,28 @@ from (
 	GROUP BY 1
 	)
 """
-result = cursor.execute(query)
-print("RESULT", result) #> returns cursor object w/o results (need to fetch the results)
+#result = cursor.execute(query)
+#print("RESULT", result) #> returns cursor object w/o results (need to fetch the results)
 
-#result2 = cursor.execute(query).fetchall()
-#print("RESULT 2", result2)
+#queries = print(query1, query2, query3, query4, query5, query6, query7)
+result2 = cursor.execute(query1).fetchall()
+result3 = cursor.execute(query2).fetchall()
+result4 = cursor.execute(query3).fetchall()
+result5 = cursor.execute(query4).fetchall()
+result6 = cursor.execute(query5).fetchall()
+result7 = cursor.execute(query6).fetchall()
+result8 = cursor.execute(query7).fetchall()
+print("RESULT 2", result2)
+print("RESULT 3", result3)
+print("RESULT 4", result4)
+print("RESULT 5", result5)
+print("RESULT 6", result6)
+print("RESULT 7", result7)
+print("RESULT 8", result8)
 
-#for row in result2:
-#    print(type(row))
-#    print(row)
-#    print(row[0])
-#    print(row[1])
-#    print("-----")
+#or row in result2:
+#   print(type(row))
+#   print(row)
+#   print(row[0])
+#   #print(row[1])
+#   print("-----")
