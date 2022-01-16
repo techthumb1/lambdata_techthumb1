@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="lambdata_techthumb1", # the name that you will install via pipenv
+    name="lambdata_techthumb1",
     version="1.0",
     author="Jason Robinson",
     author_email="robinsonjason761@gmail.com",
